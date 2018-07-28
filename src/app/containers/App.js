@@ -1,11 +1,11 @@
 
 import React from "react";
-import { connect } from "react-redux"
+import { connect } from 'react-redux'
 // import { Router, Route, Switch } from 'react-router'
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 // import { Router, Route, browserHistory ,Link } from 'react-router-dom'
 
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, browserHistory, IndexRoute } from 'react-router-dom'
 
 
@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Switch, browserHistory, IndexRoute } from 'react-
 import { TestComp } from "../components/TestComp";
 import { User } from "../components/User";
 import { House } from "../components/House";
-import { Main } from "../components/Main";
+import { Main } from "./Main";
 
 
 import { setName } from "../actions/userActions"
@@ -48,6 +48,12 @@ class App extends React.Component {
           address: '',
           price: '',
           location: '',
+          number: '',
+
+          carBrand: '',
+          carPrice: '',
+          carEngineSize: '',
+
           number: '',
           houses: [
             {address: 'yoo', price: '', location: ''},
@@ -92,9 +98,9 @@ class App extends React.Component {
                     setPrice={() => this.props.setBuildingPrice(this.state.price)}
                     setLocation={() => this.props.setBuildingLocation(this.state.location)} 
 
-                    setCarBrand={() => this.props.setCarBrand(this.state.brand)}
-                    setCarPrice={() => this.props.setCarPrice(this.state.price)}
-                    setCarEngineSize={() => this.props.setCarEngineSize(this.state.location)} 
+                    setCarBrand={() => this.props.setCarBrand(this.state.carBrand)}
+                    setCarPrice={() => this.props.setCarPrice(this.state.carPrice)}
+                    setCarEngineSize={() => this.props.setCarEngineSize(this.state.carEngineSize)} 
 
 
                     addNumber = {() => this.props.addNumber(10)}
