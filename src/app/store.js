@@ -12,7 +12,7 @@ import math from "./reducers/mathReducer";
 import user from "./reducers/userReducer";
 import house from "./reducers/houseReducer";
 import building from "./reducers/buildingReducer";
-import building from "./reducers/carReducer";
+import car from "./reducers/carReducer";
 
 
 export default createStore(

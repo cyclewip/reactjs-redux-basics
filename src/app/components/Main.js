@@ -13,7 +13,6 @@ const FlexBox = styled.div `
 `;
 
 export const Main = (props) => {
-
         return (
             <div>
                 <div className="row">
@@ -57,8 +56,7 @@ export const Main = (props) => {
                             <button className="btn btn-primary"  type="" onClick={() => props.addNumber(1)}>Add number</button>
                             <button className="btn btn-primary"  type="" onClick={() => props.subtractNumber(1)}>Subtract number</button>
                             <button className="btn btn-primary"  type="" onClick={() => props.multiplyNumber(1)}>Divide number</button>
-                            <button className="btn btn-primary"  type="" onClick={() => props.divideNumber(1)}>Multiply number</button>
-                            
+                            <button className="btn btn-primary"  type="" onClick={() => props.divideNumber(1)}>Multiply number</button>            
                     </div>
                 </div>
                 <FlexBox>
@@ -75,8 +73,6 @@ export const Main = (props) => {
                 <div>
                     <Footer></Footer>
                 </div>
-   
-            </div>
-            
+            </div>      
     );
 }
